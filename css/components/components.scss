@@ -1,0 +1,27 @@
+@mixin button {
+    margin: $sm;
+    padding: $md;
+    text-align: center;
+    vertical-align: center;
+    color: #fff;
+    background: $confirmation;
+}
+
+@mixin card {
+    background-color: #fff;
+    border: solid .1rem $grayscale-dark;
+    padding: $md;
+    .header-image {
+        display: flex;
+        padding: $xl;
+        border-bottom: solid .1rem $grayscale-dark;
+        i {
+            transform: scale(150%);
+        }
+    }
+    .enterprise-info {
+        &:hover {
+            filter: brightness(.8);
+        }
+    }
+}

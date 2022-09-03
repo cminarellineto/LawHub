@@ -1,0 +1,75 @@
+@import "../variables/variables.scss";
+@import "../components/components.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+body {
+  background-image: url(../../assets/img/portrait-of-young-business-woman-standing-outside-office-buildings-business-and-success-concept.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 90rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: $md 0;
+  background: #fff;
+  box-shadow: 0 $bssm $bssm #0000002a;
+  .nav-left-side {
+    margin-left: $lg;
+    font-size: $h1;
+    span {
+      color: $color;
+    }
+  }
+  .nav-right-side {
+    ul {
+      display: flex;
+      height: 50%;
+      list-style-type: none;
+      margin-right: $lg;
+      li {
+        margin: $sm;
+        padding: $md;
+        font-weight: $semi;
+        color: $grayscale-dark;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          color: $sec-color;
+        }
+        &:nth-child(3) {
+          &:hover {
+            color: #fff;
+            background: $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    .heading-container {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        align-items: center;
+        padding: $xl;
+        margin-left: auto;
+        height: 40vh;
+        background: #0c07ad6e;
+        color: #fff;
+    }
+}
+
