@@ -26,6 +26,7 @@ nav {
   .nav-left-side {
     margin-left: $lg;
     font-size: $h1;
+    user-select: none;
     span {
       color: $color;
     }
@@ -66,10 +67,28 @@ nav {
         justify-content: flex-end;
         align-items: center;
         padding: $xl;
-        margin-left: auto;
         height: 40vh;
         background: #0c07ad6e;
         color: #fff;
+        user-select: none;
+        box-shadow: $sm $sm $md #0000002a;
+        .heading-content {
+          width: 30%;
+          .heading, .heading-text, .button{
+            margin-bottom: $md;
+            input {
+              width: 83%;
+              @include button;
+            }
+            p {
+              width: 80%;
+              font-weight: $semi;
+            }
+          }
+        }
+    }
+    article {
+      background: #fff;
     }
 }
 
