@@ -101,4 +101,27 @@ nav .nav-right-side ul li:nth-child(3):hover {
 }
 .flex-container article {
   background: #fff;
+}
+.flex-container .heading-ads {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+.flex-container .heading-ads .heading {
+  width: 20%;
+  margin: 0 auto;
+}
+.flex-container .heading-ads .heading .title {
+  display: flex;
+  color: #0c07ad;
+}
+.flex-container .heading-ads .heading .title i {
+  margin-right: 0.5rem;
+  color: #0cf569;
+  filter: brightness(0.8);
+}
+.flex-container .heading-ads .heading mark {
+  background: none;
+  color: #961fff;
+  font-weight: 700;
 }/*# sourceMappingURL=home-page.css.map */

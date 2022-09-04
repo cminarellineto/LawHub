@@ -90,5 +90,28 @@ nav {
     article {
       background: #fff;
     }
+    .heading-ads {
+      display: flex;
+      padding: $xl;
+      justify-content: center;
+      .heading {
+        width: 20%;
+        margin: 0 auto;
+        .title {
+          display: flex;
+          color: $tert-color;
+          i {
+            margin-right: $sm;
+            color: $confirmation;
+            filter: brightness(.8);
+          }
+        }
+        mark {
+          background: none;
+          color: $sec-color;
+          font-weight: $bold;
+        }
+      }
+    }
 }
 
