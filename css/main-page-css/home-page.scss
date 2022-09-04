@@ -94,6 +94,7 @@ nav {
       display: flex;
       padding: $xl;
       justify-content: center;
+      user-select: none;
       .heading {
         width: 20%;
         margin: 0 auto;
