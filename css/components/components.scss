@@ -17,20 +17,56 @@
 }
 
 @mixin card {
-    background-color: #fff;
-    border: solid .1rem $grayscale-dark;
-    padding: $md;
+    user-select: none;
+    padding: $lg;
+    width: 20%;
+    background: $tert-color;
+    border-radius: $sm;
+    color: #fff;
+    box-shadow: $bssm;
     .header-image {
         display: flex;
-        padding: $xl;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: $xl 0;
         border-bottom: solid .1rem $grayscale-dark;
         i {
-            transform: scale(150%);
+            transform: scale(300%);
         }
+    }
+    h2 {
+        text-align: center;
+        margin-top: $md;
     }
     .enterprise-info {
-        &:hover {
-            filter: brightness(.8);
+        margin-top: $md;
+        }
+        ul {
+            text-align: center;
+            list-style-type: none;
+            li {
+                &:hover {
+                    filter: brightness(.8);
+            }
         }
     }
+}
+
+@mixin pill {
+    ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: $sm;
+    width: 100%;
+    li {
+        background: #fff;
+        font-weight: $semi;
+        font-size: $small;
+        color: $tert-color;
+        border-radius: $sm;
+        margin-top: $md;
+        padding: $sm;
+    }
+  } 
 }

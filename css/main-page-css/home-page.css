@@ -13,13 +13,15 @@ body {
 
 nav {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: 5%;
   padding: 0.8rem 0;
   background: #fff;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1647058824);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4509803922);
+  z-index: 1;
 }
 nav .nav-left-side {
   margin-left: 1.2rem;
@@ -128,4 +130,63 @@ nav .nav-right-side ul li:nth-child(3):hover {
   background: none;
   color: #961fff;
   font-weight: 700;
+}
+
+.card-flex-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2rem 0;
+}
+.card-flex-container .job {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 1.2rem;
+  width: 20%;
+  background: #0c07ad;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4509803922);
+}
+.card-flex-container .job .header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: solid 0.1rem #737373;
+}
+.card-flex-container .job .header-image i {
+  transform: scale(300%);
+}
+.card-flex-container .job h2 {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+.card-flex-container .job .enterprise-info {
+  margin-top: 0.8rem;
+}
+.card-flex-container .job ul {
+  text-align: center;
+  list-style-type: none;
+}
+.card-flex-container .job ul li:hover {
+  filter: brightness(0.8);
+}
+.card-flex-container .job .role-pill ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.5rem;
+  width: 100%;
+}
+.card-flex-container .job .role-pill ul li {
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.75;
+  color: #0c07ad;
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+  padding: 0.5rem;
 }/*# sourceMappingURL=home-page.css.map */
