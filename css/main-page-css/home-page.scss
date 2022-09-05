@@ -61,61 +61,64 @@ nav {
 }
 
 .flex-container {
-    width: 100%;
-    height: 100%;
-    .heading-container {
-        display: flex;
-        position: relative;
-        justify-content: flex-end;
-        align-items: center;
-        padding: $xl;
-        height: 40vh;
-        background: #0c07ad6e;
-        color: #fff;
-        user-select: none;
-        box-shadow: $sm $sm $md #0000002a;
-        .heading-content {
-          width: 30%;
-          .heading, .heading-text, .button{
-            margin-bottom: $md;
-            input {
-              width: 83%;
-              @include button;
-            }
-            p {
-              width: 80%;
-              font-weight: $semi;
-            }
-          }
+  width: 100%;
+  height: 100%;
+  .heading-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    padding: $xl;
+    height: 40vh;
+    background: #0c07ad6e;
+    color: #fff;
+    user-select: none;
+    box-shadow: $sm $sm $md #0000002a;
+    .heading-content {
+      width: 30%;
+      .heading,
+      .heading-text,
+      .button {
+        margin-bottom: $md;
+        input {
+          width: 83%;
+          @include button;
         }
-    }
-    article {
-      background: #fff;
-    }
-    .heading-ads {
-      display: flex;
-      padding: $xl;
-      justify-content: center;
-      user-select: none;
-      .heading {
-        width: 20%;
-        margin: 0 auto;
-        .title {
-          display: flex;
-          color: $tert-color;
-          i {
-            margin-right: $sm;
-            color: $confirmation;
-            filter: brightness(.8);
-          }
-        }
-        mark {
-          background: none;
-          color: $sec-color;
-          font-weight: $bold;
+        p {
+          width: 80%;
+          font-weight: $semi;
         }
       }
     }
+  }
+  article {
+    background: #fff;
+  }
+  .heading-ads {
+    display: flex;
+    padding: $xl;
+    justify-content: center;
+    user-select: none;
+    z-index: 1;
+    .heading {
+      width: 20%;
+      margin: 0 auto;
+      .title {
+        display: flex;
+        color: $tert-color;
+        i {
+          margin-right: $sm;
+          color: $confirmation;
+          filter: brightness(0.8);
+        }
+      }
+      mark {
+        background: none;
+        color: $sec-color;
+        font-weight: $bold;
+      }
+    }
+  }
 }
 
 .card-flex-container {
@@ -123,12 +126,47 @@ nav {
   justify-content: space-around;
   width: 100%;
   padding: $xl 0;
+  box-shadow: inset $bssm;
   .job {
     @include card;
     .role-pill {
       @include pill;
     }
   }
-
 }
 
+.wage-avg {
+  display: flex;
+  width: 100%;
+  padding: $xl 0;
+  img {
+    width: 600px;
+  }
+  .right-block {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 45%;
+    margin-top: $xl;
+    .text {
+      margin-bottom: $md;
+      color: $grayscale-dark;
+      font-weight: $semi;
+      h2 {
+        margin-bottom: $sm;
+        color: $tert-color;
+      }
+    }
+    input {
+      @include button
+    }
+  }
+}
+footer {
+  text-align: center;
+  background-color: $tert-color;
+  padding: $xl;
+  color: $color;
+  font-weight: $bold;
+  user-select: none;
+}

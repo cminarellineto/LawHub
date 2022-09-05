@@ -20,7 +20,7 @@ nav {
   height: 5%;
   padding: 0.8rem 0;
   background: #fff;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4509803922);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4509803922);
   z-index: 1;
 }
 nav .nav-left-side {
@@ -78,10 +78,14 @@ nav .nav-right-side ul li:nth-child(3):hover {
 .flex-container .heading-container .heading-content {
   width: 30%;
 }
-.flex-container .heading-container .heading-content .heading, .flex-container .heading-container .heading-content .heading-text, .flex-container .heading-container .heading-content .button {
+.flex-container .heading-container .heading-content .heading,
+.flex-container .heading-container .heading-content .heading-text,
+.flex-container .heading-container .heading-content .button {
   margin-bottom: 0.8rem;
 }
-.flex-container .heading-container .heading-content .heading input, .flex-container .heading-container .heading-content .heading-text input, .flex-container .heading-container .heading-content .button input {
+.flex-container .heading-container .heading-content .heading input,
+.flex-container .heading-container .heading-content .heading-text input,
+.flex-container .heading-container .heading-content .button input {
   width: 83%;
   padding: 0.8rem;
   text-align: center;
@@ -94,10 +98,14 @@ nav .nav-right-side ul li:nth-child(3):hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.flex-container .heading-container .heading-content .heading input:hover, .flex-container .heading-container .heading-content .heading-text input:hover, .flex-container .heading-container .heading-content .button input:hover {
+.flex-container .heading-container .heading-content .heading input:hover,
+.flex-container .heading-container .heading-content .heading-text input:hover,
+.flex-container .heading-container .heading-content .button input:hover {
   filter: brightness(0.8);
 }
-.flex-container .heading-container .heading-content .heading p, .flex-container .heading-container .heading-content .heading-text p, .flex-container .heading-container .heading-content .button p {
+.flex-container .heading-container .heading-content .heading p,
+.flex-container .heading-container .heading-content .heading-text p,
+.flex-container .heading-container .heading-content .button p {
   width: 80%;
   font-weight: 600;
 }
@@ -112,6 +120,7 @@ nav .nav-right-side ul li:nth-child(3):hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 1;
 }
 .flex-container .heading-ads .heading {
   width: 20%;
@@ -137,6 +146,7 @@ nav .nav-right-side ul li:nth-child(3):hover {
   justify-content: space-around;
   width: 100%;
   padding: 2rem 0;
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4509803922);
 }
 .card-flex-container .job {
   -webkit-user-select: none;
@@ -148,7 +158,7 @@ nav .nav-right-side ul li:nth-child(3):hover {
   background: #0c07ad;
   border-radius: 0.5rem;
   color: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4509803922);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4509803922);
 }
 .card-flex-container .job .header-image {
   display: flex;
@@ -189,4 +199,56 @@ nav .nav-right-side ul li:nth-child(3):hover {
   border-radius: 0.5rem;
   margin-top: 0.8rem;
   padding: 0.5rem;
+}
+
+.wage-avg {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0;
+}
+.wage-avg img {
+  width: 600px;
+}
+.wage-avg .right-block {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 45%;
+  margin-top: 2rem;
+}
+.wage-avg .right-block .text {
+  margin-bottom: 0.8rem;
+  color: #737373;
+  font-weight: 600;
+}
+.wage-avg .right-block .text h2 {
+  margin-bottom: 0.5rem;
+  color: #0c07ad;
+}
+.wage-avg .right-block input {
+  padding: 0.8rem;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 700;
+  font-size: 1.125;
+  color: #ffffff;
+  background: #0cf569;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.wage-avg .right-block input:hover {
+  filter: brightness(0.8);
+}
+
+footer {
+  text-align: center;
+  background-color: #0c07ad;
+  padding: 2rem;
+  color: #fac814;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=home-page.css.map */
